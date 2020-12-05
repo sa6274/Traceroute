@@ -70,7 +70,7 @@ def get_route(hostname):
 
     for ttl in range(1,MAX_HOPS):
         tracelist1 = []
-        tracelist1.append(str(ttl)) 
+        tracelist1.append(str(ttl))
 
         for tries in range(TRIES):
             destAddr = gethostbyname(hostname)
@@ -152,7 +152,7 @@ def get_route(hostname):
                 break
             finally:
                 mySocket.close()
-                print(tracelist1)
+                print(tracelist2)
     return tracelist2
 
 
