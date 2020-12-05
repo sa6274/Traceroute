@@ -156,4 +156,3 @@ def get_route(hostname):
     return tracelist2
 
 
-get_route("www.google.com")
