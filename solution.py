@@ -70,7 +70,7 @@ def get_route(hostname):
 
     for ttl in range(1,MAX_HOPS):
         tracelist1 = []
-        tracelist1.insert(-1, ttl)
+        tracelist1.insert(str(ttl))
 
         for tries in range(TRIES):
             destAddr = gethostbyname(hostname)
